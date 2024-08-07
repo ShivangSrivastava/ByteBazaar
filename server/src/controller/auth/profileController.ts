@@ -39,8 +39,8 @@ export const deleteProfileController = (
   res: express.Response
 ) => {
   const id = (req as any).user?.id;
-  const {password} = req.body;
-  UserModel.findByIdAndDelete(id, {password}).then((user: any) => {
+  const { password } = req.body;
+  UserModel.findByIdAndDelete(id, { password }).then((user: any) => {
     res.status(200).json({ message: "Deleted Successfully" });
   });
 };

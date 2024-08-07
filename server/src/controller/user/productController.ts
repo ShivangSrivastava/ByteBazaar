@@ -1,4 +1,4 @@
-import express from 'express'
+import express from 'express';
 import ProductModel from '../../model/product/productModel';
 
 export const userGetAllCategoryController = (_req: express.Request, res: express.Response) => {

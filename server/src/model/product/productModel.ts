@@ -46,5 +46,5 @@ productSchema.pre("save", function (next) {
 });
 
 const ProductModel = mongoose.model("Products", productSchema);
-ProductModel.syncIndexes(); 
+ProductModel.syncIndexes();
 export default ProductModel;
